@@ -1,5 +1,5 @@
-/* target page: https://github.com/notifications */
 javascript: [".color-fg-closed", ".color-fg-done"].forEach((sel) => {
+  /* target page: https://github.com/notifications */
   document.querySelectorAll(sel).forEach((it) => {
     div = it.closest(".flex-row");
     console.log(div);
@@ -7,4 +7,4 @@ javascript: [".color-fg-closed", ".color-fg-done"].forEach((sel) => {
     c.click();
   });
 });
-document.querySelector("button[title='Done']").click();
+document.querySelector("button[data-hotkey='e']").click();
