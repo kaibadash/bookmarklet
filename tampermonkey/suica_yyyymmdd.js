@@ -17,7 +17,15 @@
     // 選択された年月を取得 (例: 2024/10)
     const selectedYearMonth = selectYearMonth.value;
     // 年月の値を配列に分割
-    const [year, month] = selectedYearMonth.split("/");
+    let [year, month] = selectedYearMonth.split("/");
+    // 本日は月初だったら先月を選択
+    if (new Date().getDate() <= 5) {
+      month--;
+    }
+    if (month == 0) {
+      month = 12;
+      year--;
+    }
     // 月日セルを取得 (例: 10/01)
     const dateCells = document.querySelectorAll("td .whtbg");
     // 日付を更新
@@ -31,7 +39,7 @@
         });
 
         // yyyy/mm/dd(Day)形式で表示
-        cell.innerText = `${year}/${month}/${d}(${dayName})`.chomp();
+        cell.innerText = `${year}/${month}/${d}(${dayName})`;
       }
     });
   }
