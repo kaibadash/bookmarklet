@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # kaiba's browser extension.
 
 ## bookmarklet
@@ -10,4 +12,5 @@ see https://add0n.com/stylus.html
 
 ## Tampermonkey
 
-see https://www.tampermonkey.net/
+- Install [Tampermonkey](https://www.tampermonkey.net/)
+- Add script: Show `*.user.js` as raw.
