@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Convert date format to yyyy/mm/dd(Day) based on selected year/month in Select1
-// @match        https://www.mobilesuica.com/iq/ir/SuicaDisp.aspx?*
+// @match        https://www.mobilesuica.com/iq/ir/SuicaDisp.aspx
 // @grant        none
 // ==/UserScript==
 
